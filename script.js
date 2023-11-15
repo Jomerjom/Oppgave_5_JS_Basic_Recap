@@ -59,7 +59,7 @@ console.log(generateRandomString(25));
 
 
 //* Assignment 5:
-/* Make a function that uses a parameter to check if a number is odd or even */
+/* Make a function that uses a paMinneeter to check if a number is odd or even */
 
 //! Write code here
 function checkOddOrEven(num) {
@@ -95,7 +95,7 @@ console.log(userTitle);
 
 //* Assigment 8:
 /*
-Write a function that takes in 2 parameters:
+Write a function that takes in 2 paMinneeters:
 
  - A name (string)
  - An hour of the day (number)
@@ -133,7 +133,7 @@ console.log(greeting("Gunnar", 19));
 
 
 //* Assignment 9:
-/* Write a function that takes in 2 numbers as parameters.
+/* Write a function that takes in 2 numbers as paMinneeters.
 
 In your function, check which of the numbers received is the largest,
 then return the sum of the largest number divided by the smaller.
@@ -153,6 +153,36 @@ console.log(largestDivide(13, 24));
 Random Number Generator, Methods, and Arrays with Objects */
 
 //! Write code here
+function randomObject() {
+    const objects = [
+        { type: "Laptop", merke: "Asus", pris: 15000 },
+        { type: "Skjermkort", merke: "MSI", pris: 2000 },
+        { type: "Hovedkort", merke: "Gigabyte", pris: 1600 },
+        { type: "Minne", merke: "HyperX Fury", pris: 850 },
+        { type: "Strømforsyning", merke: "Corsair HX1200", pris: 1700 }
+    ];
+
+    const randomIndex = Math.floor(Math.random() * objects.length);
+    const randomObject = objects[randomIndex];
+
+    switch (randomObject.type) {
+        case "Laptop":
+            return `Du kjøpte en ${randomObject.merke} Laptop for ${randomObject.pris},-`;
+        case "Skjermkort":
+            return `Du kjøpte en ${randomObject.merke} Skjermkort for ${randomObject.pris},-`;
+        case "Hovedkort":
+            return `Du kjøpte en ${randomObject.merke} Hovedkort for ${randomObject.pris},-`;
+        case "Minne":
+            return `Du kjøpte ${randomObject.merke} Minne for ${randomObject.pris},-`;
+        case "Strømforsyning":
+            return `Du kjøpte en ${randomObject.merke} Strømforsyning for ${randomObject.pris},-`;
+        default:
+            return "Du sparte pengene dine i dag";
+    }
+}
+
+console.log(randomObject());
+
 
 //* BAONUS assignment:
 /*
@@ -160,19 +190,19 @@ EXTRA CHALLENGE
 
 This is not mandatory, only for those who want an extra challenge.
 
-Make a function called coolMaker that takes in 1 parameter.
+Make a function called coolMaker that takes in 1 paMinneeter.
 
-If the parameter received is a string:
+If the paMinneeter received is a string:
 Return the string with "😎" added to the beginning and end
 
-If the parameter received is a number:
+If the paMinneeter received is a number:
 Double it, convert it to a string and return it with "😎" added to the beginning and end.
 
-If the parameter received is a boolean:
-If the parameter received is true, return "😎Yeah😎". If the parameter received is false,
+If the paMinneeter received is a boolean:
+If the paMinneeter received is true, return "😎Yeah😎". If the paMinneeter received is false,
 return "😎Chill😎"
 
-If the parameter received is any other datatype:
+If the paMinneeter received is any other datatype:
 Return "😎Primitive values only😎"
 
 Use arrow function syntax.
