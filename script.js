@@ -46,11 +46,11 @@ console.log(x**0);
 
 //! Write code here
 function generateRandomString(length) {
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
     let result = "";
-    const charactersLength = characters.length;
+    const charsLength = chars.length;
     for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        result += chars.charAt(Math.floor(Math.random() * charsLength));
     }
     return result;
 }
