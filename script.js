@@ -39,7 +39,7 @@ console.log(x**2);
 // Dividing a number by itself.
 
 //! Write code here
-console.log(x**0);
+console.log(x /= x);
 
 //* Assignment 4:
 /* Make an if else statement that returns a random string */
@@ -84,12 +84,8 @@ Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working. */
 
 //! Write code here
-let userMale = true;
-let userTitle = userMale ? "Mr." : "Mrs.";
-console.log(userTitle);
-
-userMale = false;
-userTitle = userMale ? "Mr." : "Mrs.";
+let userMale = false;
+const userTitle = userMale ? "Mr." : "Mrs.";
 console.log(userTitle);
 
 
