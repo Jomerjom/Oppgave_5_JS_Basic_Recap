@@ -208,17 +208,11 @@ Console log the function call with a few different datatypes to show that it's w
 
 //! Write code here
 
-const coolMaker = (paMinneeter) => {
-    if (typeof paMinneeter === "string") {
-        return `😎${paMinneeter}😎`;
-    } else if (typeof paMinneeter === "number") {
-        return `😎${String(paMinneeter * 2)}😎`;
-    } else if (typeof paMinneeter === "boolean") {
-        return paMinneeter ? "😎Yeah😎" : "😎Chill😎";
-    } else {
-        return "😎Primitive values only😎";
-    }
-}
+const coolMaker = (paMinneeter) => 
+    typeof paMinneeter === "string" ? `😎${paMinneeter}😎` :
+    typeof paMinneeter === "number" ? `😎${paMinneeter * 2}😎` :
+    typeof paMinneeter === "boolean" ? paMinneeter ? "😎Yeah😎" : "😎Chill😎" :
+    "😎Primitive values only😎";
 
 console.log(coolMaker(10));
 console.log(coolMaker("Hello"));
