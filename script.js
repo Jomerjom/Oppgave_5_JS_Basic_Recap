@@ -159,7 +159,7 @@ function randomObject() {
         { type: "Skjermkort", merke: "MSI", pris: 2000 },
         { type: "Hovedkort", merke: "Gigabyte", pris: 1600 },
         { type: "Minne", merke: "HyperX Fury", pris: 850 },
-        { type: "Strømforsyning", merke: "Corsair HX1200", pris: 1700 }
+        { type: "Strømforsyning", merke: "Corsair HX", pris: 1700 }
     ];
 
     const randomIndex = Math.floor(Math.random() * objects.length);
@@ -211,3 +211,21 @@ Console log the function call with a few different datatypes to show that it's w
 */
 
 //! Write code here
+
+const coolMaker = (paMinneeter) => {
+    if (typeof paMinneeter === "string") {
+        return `😎${paMinneeter}😎`;
+    } else if (typeof paMinneeter === "number") {
+        return `😎${String(paMinneeter * 2)}😎`;
+    } else if (typeof paMinneeter === "boolean") {
+        return paMinneeter ? "😎Yeah😎" : "😎Chill😎";
+    } else {
+        return "😎Primitive values only😎";
+    }
+}
+
+console.log(coolMaker(10));
+console.log(coolMaker("Hello"));
+console.log(coolMaker(true));
+console.log(coolMaker(false));
+console.log(coolMaker({}));
