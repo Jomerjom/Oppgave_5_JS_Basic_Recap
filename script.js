@@ -59,7 +59,7 @@ console.log(generateRandomString(25));
 
 
 //* Assignment 5:
-/* Make a function that uses a paMinneeter to check if a number is odd or even */
+/* Make a function that uses a param to check if a number is odd or even */
 
 //! Write code here
 function checkOddOrEven(num) {
@@ -91,7 +91,7 @@ console.log(userTitle);
 
 //* Assigment 8:
 /*
-Write a function that takes in 2 paMinneeters:
+Write a function that takes in 2 params:
 
  - A name (string)
  - An hour of the day (number)
@@ -129,7 +129,7 @@ console.log(greeting("Gunnar", 19));
 
 
 //* Assignment 9:
-/* Write a function that takes in 2 numbers as paMinneeters.
+/* Write a function that takes in 2 numbers as params.
 
 In your function, check which of the numbers received is the largest,
 then return the sum of the largest number divided by the smaller.
@@ -186,19 +186,19 @@ EXTRA CHALLENGE
 
 This is not mandatory, only for those who want an extra challenge.
 
-Make a function called coolMaker that takes in 1 paMinneeter.
+Make a function called coolMaker that takes in 1 param.
 
-If the paMinneeter received is a string:
+If the param received is a string:
 Return the string with "😎" added to the beginning and end
 
-If the paMinneeter received is a number:
+If the param received is a number:
 Double it, convert it to a string and return it with "😎" added to the beginning and end.
 
-If the paMinneeter received is a boolean:
-If the paMinneeter received is true, return "😎Yeah😎". If the paMinneeter received is false,
+If the param received is a boolean:
+If the param received is true, return "😎Yeah😎". If the param received is false,
 return "😎Chill😎"
 
-If the paMinneeter received is any other datatype:
+If the param received is any other datatype:
 Return "😎Primitive values only😎"
 
 Use arrow function syntax.
@@ -208,10 +208,10 @@ Console log the function call with a few different datatypes to show that it's w
 
 //! Write code here
 
-const coolMaker = (paMinneeter) => 
-    typeof paMinneeter === "string" ? `😎${paMinneeter}😎` :
-    typeof paMinneeter === "number" ? `😎${paMinneeter * 2}😎` :
-    typeof paMinneeter === "boolean" ? paMinneeter ? "😎Yeah😎" : "😎Chill😎" :
+const coolMaker = (param) => 
+    typeof param === "string" ? `😎${param}😎` :
+    typeof param === "number" ? `😎${param * 2}😎` :
+    typeof param === "boolean" ? param ? "😎Yeah😎" : "😎Chill😎" :
     "😎Primitive values only😎";
 
 console.log(coolMaker(10));
